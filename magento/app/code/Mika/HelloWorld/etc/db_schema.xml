@@ -1,0 +1,17 @@
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="mika_news" resource="default" engine="innodb" comment="Mika Hello World">
+        <column xsi:type="int" name="news_id" unsigned="true" nullable="false" identity="true"
+                comment="NEWS ID"/>
+        <column xsi:type="varchar" name="news" nullable="true" length="255" comment="Type"/>
+        <column xsi:type="text" name="comment" nullable="true"  comment="Type"/>
+        <column xsi:type="datetime"  name="value" on_update="false" nullable="true" comment="NewDate"/>
+        <column xsi:type="timestamp" name="timestamp" default="CURRENT_TIMESTAMP" on_update="true" nullable="false"/>
+
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="news_id"/>
+        </constraint>
+        <constraint xsi:type="unique" referenceId="Unique">
+            <column name="news"/>
+        </constraint>
+    </table>
+</schema>

@@ -1,0 +1,10 @@
+<?php
+/** @var \Mika\HelloWorld\Block\Hello $block */
+?>
+
+<?php foreach ($block->getItems() as $item): ?>
+    <p>
+        <?php echo $item->getName(); ?> : <?php echo $item->getDicription() ?>
+    </p>
+<?php endforeach; ?>
+
