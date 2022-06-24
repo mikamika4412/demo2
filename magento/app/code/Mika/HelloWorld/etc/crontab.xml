@@ -3,7 +3,7 @@
         xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
         <group id="default">
             <job name="mikaAddItem" instance="Mika\HelloWorld\Cron\AddItem" method="execute">
-                <schedule>* * * * *</schedule>
+                <config_path>mika/general/cron_expression</config_path>
             </job>
         </group>
 </config>
