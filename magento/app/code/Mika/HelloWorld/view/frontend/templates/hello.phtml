@@ -4,7 +4,12 @@
 
 <?php foreach ($block->getItems() as $item): ?>
     <p>
-        <?php echo $item->getName(); ?> : <?php echo $item->getDicription() ?>
+        <?php echo $item->getNews_id(); ?>    :
+        <?php echo $item->getNews(); ?>    :
+        <?php echo $item->getComment(); ?>    :
+        <?php echo $item->getValue(); ?>    :
+        <?php echo $item->getDate_up() ?>  :
+        <?php echo $item->getTimestamp() ?>
     </p>
 <?php endforeach; ?>
 

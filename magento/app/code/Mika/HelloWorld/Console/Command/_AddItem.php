@@ -10,7 +10,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 use Mika\HelloWorld\Model\ItemFactory;
 use Magento\Framework\Console\Cli;
 
-class AddItem extends Command
+class AddItem_ extends Command
 {
     const INPUT_KEY_NEWS = 'news';
     const INPUT_KEY_COMMENT = 'comment';

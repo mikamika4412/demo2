@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+        <group id="default">
+            <job name="mikaAddItem" instance="Mika\HelloWorld\Cron\AddItem" method="execute">
+                <schedule>* * * * *</schedule>
+            </job>
+        </group>
+</config>
