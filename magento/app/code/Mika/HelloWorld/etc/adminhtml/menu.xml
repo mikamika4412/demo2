@@ -2,7 +2,12 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
         <add id="Mika_HelloWorld::mika" title="Mika" module="Mika_HelloWorld" sortOrder="31" resource="Mika_HelloWorld::mika"
-        translate="title" action="mika_helloworld"/>
-<!--        <add id="Mika_HelloWorld::helloworld" title="HelloWorld" module="Mika_HelloWorld" sortOrder="10" resource="Mika::helloworld" parent="Mika_HelloWorld::admin" action="mika/helloworld/index"/>-->
+        translate="title"/>
+<!--        action="mika"/>-->
+        <add id="Mika_HelloWorld::helloworld" title="HelloWorld" module="Mika_HelloWorld" sortOrder="10" resource="Mika_HelloWorld::helloworld" parent="Mika_HelloWorld::mika" action="mika/helloworld/index"/>
+<!--        <add id="Mika_HelloWorld::" title="Hello World" module="Mika_HelloWorld" sortOrder="10" resource="Mika::helloworld" parent="Mika_HelloWorld::mika" action="mika/helloworld/index"/>-->
     </menu>
 </config>
+
+<!--<add id="AdvancedCoder_ProductTypes::advanced_coder" title="Advanced Coder" module="AdvancedCoder_ProductTypes" sortOrder="31" resource="Advanced_Coder::product_types"/>-->
+<!--<add id="Mika_HelloWorld::helloworld" title="Hello World" module="Mika_HelloWorld" sortOrder="10" resource="Mika::helloworld" parent="Mika_HelloWorld::mika" action="mika/helloworld/index"/>-->

@@ -12,9 +12,9 @@ class Index extends Action
     public function execute()
     {
 //        echo 'Hello Admins!!!';
-//        return $this->resultFactory->create($this->resultFactory::TYPE_PAGE);
-        $result = $this->resultFactory->create(ResultFactory::TYPE_RAW);
-        $result->setContents('Hello Admins');
-        return $result;
+        return $this->resultFactory->create($this->resultFactory::TYPE_PAGE);
+//        $result = $this->resultFactory->create(ResultFactory::TYPE_RAW);
+//        $result->setContents('Hello Admins');
+//        return $result;
     }
 }
